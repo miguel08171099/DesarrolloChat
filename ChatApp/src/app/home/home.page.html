@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-title>
+      Join Chat
+    </ion-title>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Set Nickname</ion-label>
+    <ion-input type="text" [(ngModel)]="nickname" placeholder="Nickname"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="joinChat()" [disabled]="nickname === ''">Join Chat as {{ nickname }}</button>
+</ion-content>
